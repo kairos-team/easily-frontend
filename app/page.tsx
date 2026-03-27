@@ -25,34 +25,34 @@ export default function Home() {
     <div className="bg-white font-sans">
       <header>
         <nav
-          className="flex items-center justify-between px-8 py-3 border-y border-white/10"
+          className="flex items-center justify-between px-8  border-y border-white/10"
           aria-label="Navegação Principal"
         >
           <div className="cursor-pointer flex items-center relative ">
             <Image
               src={"/logo1.png"}
-              width={45}
-              height={45}
+              width={30}
+              height={30}
               alt="logo"
               className="absolute bottom-1"
             />
-            <span className="text-3xl  italic font-semibold text-blueDefault ml-10 ">
+            <span className="text-xl  italic font-semibold text-blueDefault ml-10 ">
               Easily
             </span>
           </div>
           <div className="hidden md:flex items-center gap-8 py-5  text-blueDefault/75  tracking-wide text-xl">
-            <button className="hover:text-blueDefault  text-2xl transition-colors cursor-pointer">
+            <button className="hover:text-blueDefault font-semibold text-xl transition-colors cursor-pointer">
               Funcionalidades
             </button>
-            <button className="hover:text-blueDefault   text-2xl transition-colors cursor-pointer">
+            <button className="hover:text-blueDefault   font-semibold text-xl transition-colors cursor-pointer">
               Planos
             </button>
-            <button className="hover:text-blueDefault   text-2xl transition-colors cursor-pointer">
+            <button className="hover:text-blueDefault  font-semibold text-xl transition-colors cursor-pointer">
               Contato
             </button>
           </div>
           <a
-            className="px-5 py-2 text-xl   border text-white  hover:bg-blueDefault bg-blueDefault/90 "
+            className="px-5 py-2 text-sm   border text-white  hover:bg-blueDefault bg-blueDefault/90 rounded-xl "
             href="/auth/login"
           >
             Entrar
@@ -71,7 +71,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col md:flex-row gap-5 z-10  w-full  justify-center items-center">
           <div className=" max-w-150 ">
-            <h1 className="text-black text-3xl md:text-5xl font-bold leading-tight mb-6">
+            <h1 className="text-black text-3xl md:text-4xl font-bold leading-tight mb-6">
               Simplifique sua gestão fiscal e de estoque{" "}
             </h1>
             <p className="text-black/80 text-lg mb-10 max-w-lg leading-relaxed">
@@ -91,13 +91,13 @@ export default function Home() {
               ].map((item, index) => (
                 <li
                   key={index}
-                  className="flex items-center gap-3 text-black text-base md:text-xl"
+                  className="flex items-center gap-3 text-black text-base md:text-sm"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                     fill="currentColor"
-                    className="w-7 h-7 text-green-600"
+                    className="w-5 h-5 text-green-600"
                   >
                     <path
                       fillRule="evenodd"
@@ -179,7 +179,7 @@ export default function Home() {
         </div>
       </section>
       <section className="flex flex-col p-10   text-black items-center border border-black/10">
-        <h2 className="text-4xl font-bold mb-6 leading-snug text-black">
+        <h2 className="text-3xl font-bold mb-6 leading-snug text-black">
           Funcionalidades
         </h2>
         <div className="flex flex-col md:flex-row items-center justify-center gap-6 ">
@@ -200,7 +200,7 @@ export default function Home() {
                 </svg>
               </div>
               <h3 className="font-bold text-xl mb-2">Emissão de NF</h3>
-              <p className="text-black/50 text-base leading-relaxed">
+              <p className="text-black/50 text-sm leading-relaxed">
                 Emissão de Notas fiscais de compra e venda.
               </p>
             </div>
@@ -222,7 +222,7 @@ export default function Home() {
                 </svg>
               </div>
               <h3 className="font-bold text-xl mb-2">Emissão de NF</h3>
-              <p className="text-black/50 text-base leading-relaxed">
+              <p className="text-black/50 text-sm leading-relaxed">
                 Emissão de Notas fiscais de compra e venda.
               </p>
             </div>
@@ -244,7 +244,7 @@ export default function Home() {
                 </svg>
               </div>
               <h3 className="font-bold text-xl mb-2">Emissão de NF</h3>
-              <p className="text-black/50 text-base leading-relaxed">
+              <p className="text-black/50 text-sm leading-relaxed">
                 Emissão de Notas fiscais de compra e venda.
               </p>
             </div>
@@ -264,11 +264,11 @@ export default function Home() {
         <div className="w-full md:w-1/2 flex flex-col justify-center px-12 py-16 bg-white  ">
           <div className="w-8 h-px bg-amber-500 mb-6"></div>
 
-          <h2 className="text-4xl font-bold mb-6 leading-snug text-black">
+          <h2 className="text-3xl font-bold mb-6 leading-snug text-black">
             Feito para quem valorizam o seu tempo
           </h2>
 
-          <p className="text-black/60 text-xl leading-relaxed mb-10 ">
+          <p className="text-black/60 text-base leading-relaxed mb-10 ">
             Chega de planilhas, tudo que precisa em um so lugar...
           </p>
 
@@ -278,21 +278,21 @@ export default function Home() {
               <p className="text-xl md:text-3xl font-bold text-amber-500">
                 100%
               </p>
-              <p className="text-black/60 text-xm ">Dados seguros</p>
+              <p className="text-black/60 text-sm ">Dados seguros</p>
             </div>
 
             <div className="w-1/4">
               <p className="text-xl md:text-3xl font-bold text-amber-500">
                 14 dias
               </p>
-              <p className="text-black/60 text-xm">Teste grátis</p>
+              <p className="text-black/60 text-sm">Teste grátis</p>
             </div>
 
             <div className="w-1/4">
               <p className="text-xl md:text-3xl font-bold text-amber-500">
                 24/7
               </p>
-              <p className="text-black/60 text-xm">Notificações</p>
+              <p className="text-black/60 text-sm">Notificações</p>
             </div>
           </div>
         </div>
@@ -300,9 +300,9 @@ export default function Home() {
       <section className="bg-white px-8 py-20 border border-black/10">
         <div className="max-w-6xl mx-auto flex flex-col gap-6  ">
           <div className="flex flex-col gap-3">
-            <h2 className="font-bold text-5xl text-black">Planos</h2>
+            <h2 className="font-bold text-4xl text-black">Planos</h2>
 
-            <p className="text-xl text-black/60 max-w-2xl">
+            <p className="text-base text-black/60 max-w-2xl">
               Escolha o plano ideal para o seu escritório. Todos os planos
               incluem{" "}
               <span className="text-amber-500 font-semibold">
@@ -325,14 +325,14 @@ export default function Home() {
                 <p className="font-semibold text-xl text-amber-500">
                   {plan.type}
                 </p>
-                <div className="font-bold text-4xl">
+                <div className="font-bold text-3xl">
                   R$ {plan.price}{" "}
                   <span className="text-xl font-normal">/mês</span>
                 </div>
-                <p className="text-xl">14 dias grátis para começar</p>
-                <ul className="flex flex-col gap-3 text-[15px] ">
+                <p className="text-base">14 dias grátis para começar</p>
+                <ul className="flex flex-col gap-3  ">
                   {plan.resoucers.map((resoucer, i) => (
-                    <li className="flex items-center gap-2 text-base" key={i}>
+                    <li className="flex items-center gap-2 text-sm" key={i}>
                       <span className="text-green-400 " aria-hidden="true">
                         ✓
                       </span>
@@ -340,7 +340,7 @@ export default function Home() {
                     </li>
                   ))}
                 </ul>
-                <button className=" bg-blueDefault/70 text-white font-semibold py-3 rounded-lg hover:bg-blueDefault transition mt-2 cursor-pointer">
+                <button className=" bg-blueDefault/70 text-white font-semibold py-2 rounded-lg hover:bg-blueDefault transition mt-2 cursor-pointer">
                   Começar agora
                 </button>
               </div>
@@ -350,13 +350,13 @@ export default function Home() {
       </section>
       <section className="bg-gray-250 px-8 py-20 border border-black/10">
         <div className=" max-w-6xl mx-auto flex flex-col gap-3 ">
-          <h2 className="text-4xl text-black font-bold ">Fale Conosco</h2>
-          <p className="font-semibold text-black/60">
+          <h2 className="text-3xl text-black font-bold ">Fale Conosco</h2>
+          <p className="font-semibold text-black/60 text-sm">
             Dúvidas, sugestões ou suporte? Entre em contato.
           </p>
           <a
             href=""
-            className="text-amber-500 flex flex-row gap-3 text-xl font-semibold"
+            className="text-amber-500 flex flex-row gap-3 text-base font-semibold"
           >
             <span className="text-amber-500">
               <svg
@@ -382,12 +382,12 @@ export default function Home() {
           <div className="cursor-pointer flex items-center relative ">
             <Image
               src={"/logo1.png"}
-              width={45}
-              height={45}
+              width={30}
+              height={30}
               alt="logo"
               className="absolute bottom-1"
             />
-            <span className="text-3xl  italic font-semibold text-blueDefault ml-10 ">
+            <span className="text-xl  italic font-semibold text-blueDefault ml-10 ">
               Easily
             </span>
           </div>
