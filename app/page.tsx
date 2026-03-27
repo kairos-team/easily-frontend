@@ -40,14 +40,14 @@ export default function Home() {
               Easily
             </span>
           </div>
-          <div className="hidden md:flex items-center gap-8 py-5  text-blueDefault/75  tracking-wide text-xl">
-            <button className="hover:text-blueDefault font-semibold text-xl transition-colors cursor-pointer">
+          <div className="hidden md:flex items-center gap-8 py-5  text-black/70  tracking-wide text-xl">
+            <button className="hover:text-black font-semibold text-xl transition-colors cursor-pointer">
               Funcionalidades
             </button>
-            <button className="hover:text-blueDefault   font-semibold text-xl transition-colors cursor-pointer">
+            <button className="hover:text-black   font-semibold text-xl transition-colors cursor-pointer">
               Planos
             </button>
-            <button className="hover:text-blueDefault  font-semibold text-xl transition-colors cursor-pointer">
+            <button className="hover:text-black  font-semibold text-xl transition-colors cursor-pointer">
               Contato
             </button>
           </div>
@@ -60,21 +60,20 @@ export default function Home() {
         </nav>
       </header>
       <section className="flex flex-col md:flex-row p-2 md:p-0 justify-center items-center gap-20 relative w-full min-h-[80vh] border-y border-white/10  ">
-        <div className="absolute inset-0 z-0 pointer-events-none ">
-          <Image
-            src="/time2.jpg"
-            alt="imagem de fundo"
-            fill
-            className="object-cover opacity-50  "
-            priority
-          />
-        </div>
+        <div className="bg-black w-full h-full absolute" />
+        <Image
+          src="/time2.jpg"
+          alt="imagem de fundo"
+          fill
+          className="object-cover opacity-30 absolute inset-0 z-0   "
+          priority
+        />
         <div className="flex flex-col md:flex-row gap-5 z-10  w-full  justify-center items-center">
           <div className=" max-w-150 ">
-            <h1 className="text-black text-3xl md:text-4xl font-bold leading-tight mb-6">
+            <h1 className="text-white text-3xl md:text-4xl font-bold leading-tight mb-6">
               Simplifique sua gestão fiscal e de estoque{" "}
             </h1>
-            <p className="text-black/80 text-lg mb-10 max-w-lg leading-relaxed">
+            <p className="text-white/80 text-sm mb-10 max-w-lg leading-relaxed">
               Centralize emissão de notas e controle de estoque em um sistema
               inteligente que reduz erros e economiza seu tempo.
             </p>
@@ -91,7 +90,7 @@ export default function Home() {
               ].map((item, index) => (
                 <li
                   key={index}
-                  className="flex items-center gap-3 text-black text-base md:text-sm"
+                  className="flex items-center gap-3 text-white text-base md:text-sm"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
