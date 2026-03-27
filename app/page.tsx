@@ -191,7 +191,7 @@ export default function Home() {
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
-                  stroke-width="1.5"
+                  strokeWidth="1.5"
                   aria-hidden="true"
                 >
                   <rect x="3" y="3" width="18" height="18" rx="2"></rect>
@@ -264,7 +264,7 @@ export default function Home() {
           <div className="w-8 h-px bg-amber-500 mb-6"></div>
 
           <h2 className="text-3xl font-bold mb-6 leading-snug text-black">
-            Feito para quem valorizam o seu tempo
+            Feito para quem valoriza o seu tempo
           </h2>
 
           <p className="text-black/60 text-base leading-relaxed mb-10 ">
